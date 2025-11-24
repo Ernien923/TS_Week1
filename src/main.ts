@@ -97,6 +97,7 @@ export const calcTotal: CalcTotalFn /* TODO: CalcTotalFn */ = (items, coupon): n
 // API: https://fakestoreapi.com/products
 // 目標：理解泛型定義與應用。
 import axios from 'axios'; /* TODO */
+import type { AxiosResponse } from 'axios';
 import { omit } from 'lodash';
 export type PlantDTO = { 
   id: number; 
@@ -105,7 +106,7 @@ export type PlantDTO = {
   category: string; 
 };
 
-export const fetchPlants = async () /* TODO */ => {
+export const fetchPlants = async () /* TODO */: Promise<AxiosResponse<PlantDTO>> => {
   return axios.get('https://fakestoreapi.com/products');
 }
 
