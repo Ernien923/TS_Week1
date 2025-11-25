@@ -110,7 +110,7 @@ export type PlantDTO = {
 export const fetchPlants = async (): Promise<AxiosResponse<PlantDTO[]>>=> {
   return axios.get('https://fakestoreapi.com/products');
 }
-console.log(await fetchPlants())
+
 
 // --- 題目七：Required、Partial ---
 // 說明：updatePlant(input) 接受部分更新，實際回傳需是 Required<PlantBase>。
