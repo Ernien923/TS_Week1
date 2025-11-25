@@ -15,6 +15,7 @@
 
     /* Linting */
     "strict": true,
+    //在setting.json加上{"typescript.tsdk": "node_modules/typescript/lib"}可以解決報錯問題
     "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
